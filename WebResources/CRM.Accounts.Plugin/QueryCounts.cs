@@ -4,13 +4,13 @@ using Microsoft.Xrm.Sdk.Query;
 
 namespace CRM.Accounts.Plugin
 {
-    public class PrimaryAttributePlugin : IPlugin
+    public class QueryCounts : IPlugin
     {
         #region Secure/Unsecure Configuration Setup
         private string _secureConfig = null;
         private string _unsecureConfig = null;
 
-        public PrimaryAttributePlugin(string unsecureConfig, string secureConfig)
+        public QueryCounts(string unsecureConfig, string secureConfig)
         {
             _secureConfig = secureConfig;
             _unsecureConfig = unsecureConfig;
@@ -27,7 +27,17 @@ namespace CRM.Accounts.Plugin
             {
                 Entity entity = (Entity)context.InputParameters["Target"];
 
-                Entity fullDetails = service.Retrieve("account", entity.Id, new ColumnSet());
+                QueryByAttribute querybyexpression = new QueryByAttribute("contact");
+                querybyexpression.ColumnSet = new ColumnSet("name", "address1_city");
+  
+                querybyexpression.Attributes.AddRange("address1_city");
+
+                querybyexpression.Values.AddRange("Philadelphia");
+
+                EntityCollection retrieved = service.RetrieveMultiple(querybyexpression);
+
+                tracer.Trace(String.Concat("Entity Count: ", retrieved.Entities.Count));  
+                
             }
             catch (Exception e)
             {

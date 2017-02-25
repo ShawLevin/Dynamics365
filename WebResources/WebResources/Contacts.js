@@ -12,11 +12,20 @@ var Contacts = (function () {
             alert("Hello, Code Camp!");
         },
         logField: function (fieldName) {
-            console.log(Xrm.Page.getAttribute(fieldName).getValue());
+            console.log(fieldName);
+            if (Xrm.Page.getAttribute(fieldName) != null) {
+                console.log(Xrm.Page.getAttribute(fieldName).getValue());
+            }
+            else
+            {
+                alert("Form is expecting field: " + fieldName);
+
+            }
         },
         logDirty: function ()
         {
             alert(Xrm.Page.data.entity.getDataXml());
+            
          
         }
     };

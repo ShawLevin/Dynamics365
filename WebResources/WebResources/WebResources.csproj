@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Contacts.js" />
+    <Content Include="GetFields.html" />
     <Content Include="MSXRMTOOLS.Xrm.Page.2016.js" />
     <Content Include="Web.config" />
   </ItemGroup>
