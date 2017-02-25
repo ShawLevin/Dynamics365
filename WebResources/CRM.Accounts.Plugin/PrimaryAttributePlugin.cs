@@ -25,9 +25,11 @@ namespace CRM.Accounts.Plugin
 
             try
             {
+                
                 Entity entity = (Entity)context.InputParameters["Target"];
 
-                Entity fullDetails = service.Retrieve("account", entity.Id, new ColumnSet());
+                Entity fullDetails = service.Retrieve("account", entity.Id, new ColumnSet() { });
+                
             }
             catch (Exception e)
             {
