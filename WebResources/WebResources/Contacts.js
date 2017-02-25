@@ -17,6 +17,7 @@ var Contacts = (function () {
         logDirty: function ()
         {
             alert(Xrm.Page.data.entity.getDataXml());
+         
         }
     };
 })();

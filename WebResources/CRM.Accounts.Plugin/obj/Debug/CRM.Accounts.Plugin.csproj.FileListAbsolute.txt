@@ -1,0 +1,10 @@
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\bin\Debug\CRM.Accounts.Plugin.dll
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\bin\Debug\CRM.Accounts.Plugin.pdb
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\bin\Debug\Microsoft.IdentityModel.dll
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\obj\Debug\CRM.Accounts.Plugin.csprojResolveAssemblyReference.cache
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\obj\Debug\CRM.Accounts.Plugin.dll
+C:\Users\Shaw\Documents\GitHub\Dynamics365\WebResources\CRM.Accounts.Plugin\obj\Debug\CRM.Accounts.Plugin.pdb
